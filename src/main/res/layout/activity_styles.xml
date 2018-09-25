@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Serious panel -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/styles_root_padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/styles_color_title" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_components_margin"
+            android:id="@+id/style_color_spinner"/>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sep_height"
+            android:layout_marginTop="@dimen/sep_margin"
+            android:layout_marginBottom="@dimen/sep_margin"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_components_margin"
+            android:text="@string/styles_version_title" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_components_margin"
+            android:id="@+id/style_version_spinner"/>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sep_height"
+            android:layout_marginTop="@dimen/sep_margin"
+            android:layout_marginBottom="@dimen/sep_margin"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:paddingStart="@dimen/style_apply_padding_vertical"
+            android:paddingEnd="@dimen/style_apply_padding_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/style_apply"
+            android:text="@string/styles_apply_button"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <!-- Achievements -->
+
+    <include layout="@layout/achievements_popup" />
+</RelativeLayout>

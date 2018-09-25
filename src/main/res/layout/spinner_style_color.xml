@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_marginStart="@dimen/spinner_adapt_color_margin_start"
+        android:layout_marginTop="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_marginBottom="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_width="@dimen/spinner_adapt_color_width"
+        android:layout_height="match_parent"
+        android:id="@+id/spinner_adapt_colorPrimary"
+        android:background="@color/colorRedPrimary" />
+
+    <View
+        android:layout_marginTop="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_marginBottom="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_width="@dimen/spinner_adapt_color_width"
+        android:layout_height="match_parent"
+        android:id="@+id/spinner_adapt_colorPrimaryDark"
+        android:background="@color/colorRedPrimaryDark" />
+
+    <View
+        android:layout_marginTop="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_marginBottom="@dimen/spinner_adapt_color_margin_vertical"
+        android:layout_width="@dimen/spinner_adapt_color_width"
+        android:layout_height="match_parent"
+        android:id="@+id/spinner_adapt_colorAccent"
+        android:background="@color/colorRedAccent" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spinner_adapt_text_padding_horizontal"
+        android:paddingTop="@dimen/spinner_adapt_text_padding_horizontal"
+        style="?android:attr/spinnerItemStyle"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textAlignment="inherit"
+        android:id="@+id/spinner_adapt_text"
+        android:text="@string/spinner_adapt_color_default" />
+</LinearLayout>

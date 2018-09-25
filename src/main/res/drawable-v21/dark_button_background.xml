@@ -1,0 +1,67 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/dark_background">
+    
+    <item android:id="@android:id/mask">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+            android:insetLeft="@dimen/dark_button_inset_horizontal"
+            android:insetTop="@dimen/dark_button_inset_vertical"
+            android:insetRight="@dimen/dark_button_inset_horizontal"
+            android:insetBottom="@dimen/dark_button_inset_vertical">
+
+            <shape android:shape="rectangle">
+
+                <corners android:radius="@dimen/dark_button_corner_radius" />
+
+                <solid android:color="@color/dark_button_background" />
+
+                <padding android:left="@dimen/dark_button_padding_horizontal"
+                    android:top="@dimen/dark_button_padding_vertical"
+                    android:right="@dimen/dark_button_padding_horizontal"
+                    android:bottom="@dimen/dark_button_padding_vertical" />
+            </shape>
+        </inset>
+    </item>
+
+    <item android:id="@android:id/background">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+            android:insetLeft="@dimen/dark_button_inset_horizontal"
+            android:insetTop="@dimen/dark_button_inset_vertical"
+            android:insetRight="@dimen/dark_button_inset_horizontal"
+            android:insetBottom="@dimen/dark_button_inset_vertical">
+
+            <shape android:shape="rectangle">
+
+                <corners android:radius="@dimen/dark_button_corner_radius" />
+
+                <solid android:color="@color/dark_button_background" />
+
+                <padding android:left="@dimen/dark_button_padding_horizontal"
+                    android:top="@dimen/dark_button_padding_vertical"
+                    android:right="@dimen/dark_button_padding_horizontal"
+                    android:bottom="@dimen/dark_button_padding_vertical" />
+            </shape>
+        </inset>
+    </item>
+</ripple>
+
+
+<!--
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/dark_button_inset_horizontal"
+    android:insetTop="@dimen/dark_button_inset_vertical"
+    android:insetRight="@dimen/dark_button_inset_horizontal"
+    android:insetBottom="@dimen/dark_button_inset_vertical">
+
+    <shape android:shape="rectangle">
+
+        <corners android:radius="@dimen/dark_button_corner_radius" />
+
+        <solid android:color="@color/dark_button_background" />
+
+        <padding android:left="@dimen/dark_button_padding_horizontal"
+            android:top="@dimen/dark_button_padding_vertical"
+            android:right="@dimen/dark_button_padding_horizontal"
+            android:bottom="@dimen/dark_button_padding_vertical" />
+    </shape>
+</inset>
+-->

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Polytime IMA4</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="wrong">Wrong</string>
+
+    <string name="ctrl_panel_time_table">Time table :</string>
+    <string name="ctrl_panel_week_selection">Week selection :</string>
+    <string name="ctrl_panel_prev" translatable="false"><![CDATA[<<]]></string>
+    <string name="ctrl_panel_current">current</string>
+    <string name="ctrl_panel_next" translatable="false"><![CDATA[>>]]></string>
+
+    <string name="message_loading">Loading…</string>
+    <string name="message_download_fail">Can\'t download the timetable. Check your connection.</string>
+    <string name="message_parsing_fail">Timetable parsing failed. Do you use the latest version of Polytime ?</string>
+
+    <string name="main_menu_legend">Legend</string>
+    <string name="main_menu_settings">Settings</string>
+    <string name="main_menu_styles">Styles</string>
+    <string name="main_menu_achievements">Achievements</string>
+
+    <string name="main_menu_online">Downloaded</string>
+    <string name="main_menu_downloading">Downloading</string>
+    <string name="main_menu_offline">Offline</string>
+    <string name="main_menu_read_error">Read error</string>
+
+    <!-- ACHIEVEMENTS -->
+    <string name="achievement_title">List of all achievements :</string>
+    <string name="achievement_img_content_desc" translatable="false">Achievement_IMG</string>
+    <string name="enter_response">Enter your response :</string>
+    <string name="search_more">Search more !</string>
+    <string name="not_so_easy">Did you really believe it would be this easy ? You\'re smarter than that !</string>
+
+    <!-- Legend -->
+    <string name="legend_title">Legend :</string>
+
+    <!-- Styles -->
+    <string name="styles_color_title">Color :</string>
+    <string name="styles_version_title">Version :</string>
+    <string name="styles_apply_button">Apply</string>
+
+    <string name="spinner_adapt_color_default">Color</string>
+    <string name="spinner_adapt_version_default">Version</string>
+    <string name="spinner_adapt_version_demo" translatable="false">AaBbCcDd</string>
+
+    <string name="red_name">Red</string>
+    <string name="magenta_name">Magenta</string>
+    <string name="blue_name">Blue</string>
+    <string name="cyan_name">Cyan</string>
+    <string name="green_name">Green</string>
+    <string name="yellow_name">Yellow</string>
+    <string name="orange_name">Orange</string>
+
+    <string name="dark_name">Dark</string>
+    <string name="light_name">Light</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="settings_cat_network">Network</string>
+    <string name="settings_cat_notification">Notification</string>
+
+    <string name="settings_network_wifi">Wifi only</string>
+    <string name="settings_network_wifi_sum">Only use wifi when downloading the timetable</string>
+
+    <string name="settings_notification_enable">Enable notification</string>
+    <string name="settings_notification_enable_sum">Display a notification with informations on the next lesson</string>
+
+    <string name="settings_notification_minimal">Minimal priority</string>
+    <string name="settings_notification_minimal_sum">The notification will be barely visible. You might want to activate this is if you want the notification to appear only on your smartwatch</string>
+
+    <string name="dont_show_notifications">Polytime\'s notifications disabled</string>
+    <string name="dont_show_notifications_action">Don\'t show this notification</string>
+</resources>

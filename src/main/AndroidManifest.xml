@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="me.pfrison.polytimeima4">
+
+    <!-- Internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".android.PolytimeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/DarkRedTheme"
+        android:fullBackupContent="@xml/auto_backup"
+        tools:ignore="GoogleAppIndexingWarning" >
+
+        <activity android:name=".android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".android.LegendActivity" />
+        <activity android:name=".android.StylesActivity" />
+        <activity android:name=".android.AchievementActivity" />
+        <activity android:name=".android.SettingsActivity" />
+
+        <service
+            android:name=".android.NotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="none" />
+
+        <receiver android:name=".android.HideNotificationBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="none" />
+    </application>
+
+</manifest>

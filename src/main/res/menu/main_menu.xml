@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/main_menu_status"
+        android:icon="@drawable/ic_cloud_download_white_24dp"
+        android:title="@string/main_menu_downloading"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/main_menu_legend"
+        android:title="@string/main_menu_legend"
+        app:showAsAction="never" />
+    <item android:id="@+id/main_menu_settings"
+        android:title="@string/main_menu_settings"
+        app:showAsAction="never" />
+    <item android:id="@+id/main_menu_styles"
+        android:title="@string/main_menu_styles"
+        app:showAsAction="never" />
+    <item android:id="@+id/main_menu_achievements"
+        android:title="@string/main_menu_achievements"
+        app:showAsAction="never" />
+</menu>

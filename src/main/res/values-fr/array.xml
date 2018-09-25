@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_list">
+        <item>Groupe TD1 TP1</item>
+        <item>Groupe TD1 TP2</item>
+        <item>Groupe TD2 TP3</item>
+        <item>Groupe TD2 TP4</item>
+    </string-array>
+    <string-array name="achievement_name">
+        <item>Quoi ? Des achievements !?</item>
+        <item>Quel légende</item>
+        <item>Knowledge is power</item>
+        <item>Quel est la plus belle couleur ?</item>
+        <item>Quel est (aussi) la plus belle couleur ?</item>
+        <item>On a quelque chose en commun</item>
+        <item>Qu\'est ce qu\'on s\'emmerde…</item>
+        <item>Tu essaies de casser quelque chose ?</item>
+        <item>MAIS QU\'EST-CE QUE… !!?</item>
+        <item>Est-ce que ça se mange ?</item>
+    </string-array>
+    <string-array name="achievement_desc">
+        <item>Attrapez-les tous !</item>
+        <item>Ça veut dire quoi \"CS\" déjà ? Ah oui : \"pas cours\" !</item>
+        <item>Trouve le secret dans le code source !</item>
+        <item>JAAUUUNEEUUH</item>
+        <item>POLYGANG !</item>
+        <item>Tu as appliqué mon style favoris ! Il est cool, non ?</item>
+        <item>Tu as ouvert Polytime en plein millieu d\'un cours. Alors ? On s\'ennuie ?</item>
+        <item>Tu as cliqué sur 10 bouttons en 1 seconde… À quoi ça te sert ?</item>
+        <item>Soit sans pitiée avec mon système d\'achievements et casse toutes les règles !</item>
+        <item>Sans aucun doute le club le plus connu de Polytech !</item>
+    </string-array>
+</resources>

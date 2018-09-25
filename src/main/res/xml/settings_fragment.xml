@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/settings_cat_network">
+        <CheckBoxPreference
+            android:key="useWifi"
+            android:defaultValue="false"
+            android:title="@string/settings_network_wifi"
+            android:summary="@string/settings_network_wifi_sum" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_cat_notification">
+        <CheckBoxPreference
+            android:key="enableNotification"
+            android:defaultValue="false"
+            android:title="@string/settings_notification_enable"
+            android:summary="@string/settings_notification_enable_sum" />
+
+        <CheckBoxPreference
+            android:key="priorityMinimal"
+            android:defaultValue="true"
+            android:dependency="enableNotification"
+            android:title="@string/settings_notification_minimal"
+            android:summary="@string/settings_notification_minimal_sum" />
+    </PreferenceCategory>
+</PreferenceScreen>

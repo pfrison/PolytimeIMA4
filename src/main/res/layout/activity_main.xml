@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Serious panel -->
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Control panel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ctrl_panel_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ctrl_panel_time_table"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ctrl_panel_components_margin"
+                android:id="@+id/ctrl_panel_spinner"/>
+
+            <!-- Separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sep_height"
+                android:layout_marginTop="@dimen/sep_margin"
+                android:layout_marginBottom="@dimen/sep_margin"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ctrl_panel_week_selection"
+                android:id="@+id/arrowText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ctrl_panel_prev"
+                    android:id="@+id/ctrl_panel_prev"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ctrl_panel_current"
+                    android:id="@+id/ctrl_panel_current"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ctrl_panel_next"
+                    android:id="@+id/ctrl_panel_next"/>
+            </LinearLayout>
+
+            <!-- Separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sep_height"
+                android:layout_marginTop="@dimen/sep_margin"
+                android:layout_marginBottom="@dimen/sep_margin"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_panel"
+            android:paddingBottom="@dimen/main_panel_padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Time table display (added programmatically) -->
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Achievements -->
+
+    <include layout="@layout/achievements_popup" />
+</RelativeLayout>

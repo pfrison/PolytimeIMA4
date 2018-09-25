@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Red -->
+    <color name="colorRedPrimary">#f72125</color>
+    <color name="colorRedPrimaryDark">#a71618</color>
+    <color name="colorRedAccent">#c1268b</color>
+    <!-- Magenta -->
+    <color name="colorMagentaPrimary">#dd13fc</color>
+    <color name="colorMagentaPrimaryDark">#780a89</color>
+    <color name="colorMagentaAccent">#7813fc</color>
+    <!-- Blue -->
+    <color name="colorBluePrimary">#1332fc</color>
+    <color name="colorBluePrimaryDark">#0a1a81</color>
+    <color name="colorBlueAccent">#13a3fc</color>
+    <!-- Cyan -->
+    <color name="colorCyanPrimary">#13cafc</color>
+    <color name="colorCyanPrimaryDark">#0b7693</color>
+    <color name="colorCyanAccent">#11e4a1</color>
+    <!-- Green -->
+    <color name="colorGreenPrimary">#16990c</color>
+    <color name="colorGreenPrimaryDark">#0b4d06</color>
+    <color name="colorGreenAccent">#68990c</color>
+    <!-- Yellow -->
+    <color name="colorYellowPrimary">#fdde13</color>
+    <color name="colorYellowPrimaryDark">#c6ae11</color>
+    <color name="colorYellowAccent">#fd9f13</color>
+    <!-- Orange -->
+    <color name="colorOrangePrimary">#fd8c13</color>
+    <color name="colorOrangePrimaryDark">#ab5f0d</color>
+    <color name="colorOrangeAccent">#fd5113</color>
+
+    <!-- Lesson -->
+    <color name="lesson_border">#707070</color>
+    <color name="lesson_light_dayactive_mask">#26ffffff</color>
+    <color name="lesson_light_active_mask">#4cffffff</color>
+    <color name="lesson_dark_dayactive_mask">#4cffffff</color>
+    <color name="lesson_dark_active_mask">#86ffffff</color>
+
+    <!-- LightTheme -->
+    <color name="light_text">#202020</color>
+    <color name="light_background">#fafafa</color>
+    <color name="light_popup_background">#fafafa</color>
+
+    <!-- DarkTheme -->
+    <color name="dark_text">#e0e0e0</color>
+    <color name="dark_background">#202020</color>
+    <color name="dark_button_background">#505050</color>
+    <color name="dark_popup_background">#303030</color>
+</resources>

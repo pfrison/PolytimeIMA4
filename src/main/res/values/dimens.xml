@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main activity -->
+    <dimen name="ctrl_panel_padding">5dp</dimen>
+    <dimen name="ctrl_panel_components_margin">5dp</dimen>
+
+    <dimen name="main_panel_padding">2dp</dimen>
+
+    <dimen name="midday_border_width">2dp</dimen>
+    <dimen name="lesson_border_width">1dp</dimen>
+    <dimen name="lesson_border_width_negative">-1dp</dimen>
+
+    <!-- Legend activity -->
+    <dimen name="legend_root_padding">5dp</dimen>
+    <dimen name="legend_acronyms_padding">5dp</dimen>
+    <dimen name="legend_items_padding">2dp</dimen>
+
+    <!-- Styles activity -->
+    <dimen name="styles_root_padding">5dp</dimen>
+    <dimen name="style_components_margin">5dp</dimen>
+    <dimen name="style_apply_padding_vertical">40dp</dimen>
+
+    <!-- Separator dimensions -->
+    <dimen name="sep_height">1dp</dimen>
+    <dimen name="sep_margin">4dp</dimen>
+
+    <!-- Dark theme dimens -->
+    <dimen name="dark_button_inset_horizontal">4dp</dimen>
+    <dimen name="dark_button_inset_vertical">6dp</dimen>
+    <dimen name="dark_button_corner_radius">2dp</dimen>
+    <dimen name="dark_button_padding_horizontal">8dp</dimen>
+    <dimen name="dark_button_padding_vertical">4dp</dimen>
+    <dimen name="dark_button_pressed_z">4dp</dimen>
+    <dimen name="dark_button_elevation">2dp</dimen>
+
+    <!-- Spinner adaptors -->
+    <dimen name="spinner_adapt_text_padding_horizontal">5dp</dimen>
+    <dimen name="spinner_adapt_color_margin_start">5dp</dimen>
+    <dimen name="spinner_adapt_color_margin_vertical">2dp</dimen>
+    <dimen name="spinner_adapt_color_width">20dp</dimen>
+    <dimen name="spinner_adapt_version_width">60dp</dimen> <!-- should be 3 * spinner_adapt_color_width -->
+
+    <!-- Achievement -->
+    <dimen name="achievement_root_padding">5dp</dimen>
+    <dimen name="achievement_image_size">100dp</dimen>
+    <dimen name="achievement_popup_margin_text">10dp</dimen>
+    <dimen name="achievement_popup_padding_bottom">5dp</dimen>
+</resources>

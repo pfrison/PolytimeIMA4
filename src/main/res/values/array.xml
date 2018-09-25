@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_list">
+        <item>Group TD1 TP1</item>
+        <item>Group TD1 TP2</item>
+        <item>Group TD2 TP3</item>
+        <item>Group TD2 TP4</item>
+    </string-array>
+
+    <!-- ACHIEVEMENTS -->
+    <string-array name="achievement_name">
+        <item>What ? Achievements !?</item>
+        <item>What a legend</item>
+        <item>Knowledge is power</item>
+        <item>What is the best color ?</item>
+        <item>What is (also) the best color ?</item>
+        <item>We have something in common</item>
+        <item>Sooo booooring…</item>
+        <item>Are you trying to break something ?</item>
+        <item>WHAT THE… !!?</item>
+        <item>Is that something you can eat ?</item>
+    </string-array>
+    <string-array name="achievement_desc">
+        <item>Go catch them all !</item>
+        <item>What\'s \"CS\" again ? Oh yeah, It\'s called \"free time\" !</item>
+        <item>Read the source code and find the secret !</item>
+        <item>YEEEEELLOOOOOOW</item>
+        <item>POLYGANG !</item>
+        <item>You applied my favorite style ! Neat, isn\'t it ?</item>
+        <item>You\'ve opened Polytime in a middle of a course</item>
+        <item>You\'ve clicked 10 buttons in less than 1 second… What\'s the point ?</item>
+        <item>Leave no mercy to my achievement system and break all the rules !</item>
+        <item>Truly the most famous club in Polytech !</item>
+    </string-array>
+
+    <!-- Legend -->
+    <string-array name="legend_acronyms" translatable="false">
+        <item>Res</item>
+        <item>RLI</item>
+        <item>Syst</item>
+        <item>TR</item>
+        <item>CS</item>
+        <item>VV</item>
+        <item>Sta</item>
+        <item>Elec</item>
+        <item>Gest</item>
+        <item>Mark</item>
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>FI</item>
+        <item>RI</item>
+        <item>Sta4</item>
+        <item>Proj</item>
+        <item>TS</item>
+        <item>CNP</item>
+        <item>Optim</item>
+        <item>CCE</item>
+        <item>FLE</item>
+        <item>CI</item>
+    </string-array>
+    <string-array name="legend_full_names" translatable="false">
+        <item>Réseaux informatiques</item>
+        <item>Réseaux locaux industriels</item>
+        <item>Systèmes</item>
+        <item>Temps réel</item>
+        <item>Capteur et système piloté par événements discrets</item>
+        <item>Variation de vitesse</item>
+        <item>Valoriser son stage</item>
+        <item>Électronique</item>
+        <item>Gestion d\'entreprises</item>
+        <item>Marketing</item>
+        <item>Anglais</item>
+        <item>Espagnol / Allemend</item>
+        <item>Présentation des filières</item>
+        <item>Présentation des relations internationales</item>
+        <item>Présentation des stages 4A</item>
+        <item>Présentation des projets</item>
+        <item>Traitement de signal</item>
+        <item>Circuit numérique programmables</item>
+        <item>Optimisation</item>
+        <item>Conception de circuits électroniques</item>
+        <item>Français langue étrangère</item>
+        <item>J\'en ai aucune idée…</item>
+    </string-array>
+</resources>
