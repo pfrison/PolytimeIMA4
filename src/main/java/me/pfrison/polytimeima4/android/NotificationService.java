@@ -28,7 +28,7 @@ public class NotificationService extends Service {
     private Context context;
     private NotificationManagerCompat notificationManager;
 
-    private Thread refreshNotification = new Thread(new Runnable() {
+    private Runnable refreshNotification = new Runnable() {
         @Override
         public void run() {
             while(active){
@@ -57,7 +57,7 @@ public class NotificationService extends Service {
                 try {Thread.sleep(sleepDuration);} catch (InterruptedException e) {e.printStackTrace();}
             }
         }
-    });
+    };
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -72,7 +72,8 @@ public class NotificationService extends Service {
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         this.context = this;
         this.notificationManager = NotificationManagerCompat.from(context);
-        refreshNotification.start();
+
+        new Thread(refreshNotification).start();
         return START_STICKY;
     }
 
