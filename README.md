@@ -2,7 +2,7 @@
 
 The android version of the timetable for IMA4 students of Polytech Lille.
 
-Download it on Google Play : https://play.google.com/store/apps/details?id=pfrison.me.polytimeima4
+Download it on Google Play : https://play.google.com/store/apps/details?id=me.pfrison.polytimeima4
 
 ## "Knowledge is power" achievement
 
@@ -18,7 +18,7 @@ PS: I offer a beer to the first guy how come to me with the achievement earned =
 
 Hello again !
 
-Now that you successfully earned the "knowledge is power" achievement, it's time to show me how smart you are ! As you may know (because you watched the source code previously), it's actually impossible to earn the "WHAT'S THE... !!?" achievement in the app. However, they is a way to trick the app, so that it will show that you earn the achievement.
+Now that you successfully earned the "knowledge is power" achievement, it's time to show me how clever you are ! As you may know (because you watched the source code previously), it's actually impossible to earn the "WHAT'S THE... !!?" achievement in the app. However, they is a way to trick the app, so that it will show that you earn the achievement.
 
 I must warn you that this achievement can only "earn" with a rooted device (as far as I now).
 
