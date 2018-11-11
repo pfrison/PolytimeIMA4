@@ -19,6 +19,12 @@
         <item>Are you trying to break something ?</item>
         <item>WHAT THE… !!?</item>
         <item>Is that something you can eat ?</item>
+        <item>Our neighbours and much more</item>
+        <item>What is Saturday for ?</item>
+        <item>I… Must… Continue…</item>
+        <item>Like a true \"listeux\" !</item>
+        <item>It\'s… Flat ?!</item>
+        <item>Neverclick</item>
     </string-array>
     <string-array name="achievement_desc">
         <item>Go catch them all !</item>
@@ -31,6 +37,12 @@
         <item>You\'ve clicked 10 buttons in less than 1 second… What\'s the point ?</item>
         <item>Leave no mercy to my achievement system and break all the rules !</item>
         <item>Truly the most famous club in Polytech !</item>
+        <item>You\'ve discovered the belgium translation</item>
+        <item>You\'ve found the secret clicker</item>
+        <item>You\'ve played the clicker when your battery was below 5 percent</item>
+        <item>You\'ve purchased one freezer at the clicker</item>
+        <item>You\'ve purchased one space ship at the clicker</item>
+        <item>You\'ve cooked 1 million crepes without clicking the big crepe</item>
     </string-array>
 
     <!-- Legend -->
@@ -81,5 +93,525 @@
         <item>Conception de circuits électroniques</item>
         <item>Français langue étrangère</item>
         <item>J\'en ai aucune idée…</item>
+    </string-array>
+    <string-array name="clicker_ingredients_name" translatable="false">
+        <item>Beurre</item>
+        <item>Sucre</item>
+        <item>Caramel</item>
+        <item>Confiture</item>
+        <item>Chocolat</item>
+        <item>Congélateur</item>
+        <item>2n2222</item>
+        <item>LM748</item>
+        <item>74HC4040</item>
+        <item>ATmega328</item>
+        <item>Clavier</item>
+        <item>Manuel de réseaux</item>
+        <item>Boîte à outils</item>
+        <item>Vaisseau spatial</item>
+    </string-array>
+    <string-array name="clicker_ingredients_name_plural" translatable="false">
+        <item>beurre</item>
+        <item>sucre</item>
+        <item>caramel</item>
+        <item>confiture</item>
+        <item>chocolat</item>
+        <item>congélateurs</item>
+        <item>2n2222</item>
+        <item>LM748</item>
+        <item>74HC4040</item>
+        <item>ATmega328</item>
+        <item>claviers</item>
+        <item>manuels de réseaux</item>
+        <item>boîtes à outils</item>
+        <item>vaisseaux spatiaux</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_butter" translatable="false">
+        <item>Beurre salé</item>
+        <item>Beurre de yak</item>
+        <item>L\'argent du beurre</item>
+        <item>Beurre au lait de femme</item>
+        <item>Beurre au \"lait\" d\'homme</item>
+        <item>99,9% de matière grasse</item>
+        <item>Beurre du Powatou</item>
+        <item>Huile gelée</item>
+        <item>Ajout de vaseline</item>
+        <item>Fisty\'beurre</item>
+        <item>Beurre séché</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_sugar" translatable="false">
+        <item>Sucre en poudre</item>
+        <item>Susucre</item>
+        <item>Crêpe en sucre</item>
+        <item>Mines de sucre</item>
+        <item>Sucre d\'arcs-en-ciel</item>
+        <item>Sucre aux rêves</item>
+        <item>Sucre commerce inéquitable</item>
+        <item>Héroïne sucrée</item>
+        <item>Sucre radioactif</item>
+        <item>Pacte sucré</item>
+        <item>Profits sucrés</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_caramel" translatable="false">
+        <item>Caramel liquide</item>
+        <item>Caramel au beurre salé</item>
+        <item>Caramel caramélisé</item>
+        <item>Équipes de décontamination</item>
+        <item>Arbres à caramel</item>
+        <item>Caramel transgénique</item>
+        <item>Ajout de cérumen</item>
+        <item>Raffineries de caramel</item>
+        <item>Travail des enfants</item>
+        <item>Salaire en caramels</item>
+        <item>Raffinage 72h par jour</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_jam" translatable="false">
+        <item>Confiture de fruits</item>
+        <item>Confiture au lait</item>
+        <item>95% de sucre</item>
+        <item>Dieu de la confiture</item>
+        <item>Rituel sucré</item>
+        <item>Sacrifices humains</item>
+        <item>Ajout de sang coagulé</item>
+        <item>Liquéfaction des morts</item>
+        <item>Date limite de putréfaction</item>
+        <item>Prêtes unijambistes</item>
+        <item>Taxe d\'organes aux fidèles</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_chocolate" translatable="false">
+        <item>Pâte à tartiner</item>
+        <item>Chocolat au lait</item>
+        <item>Cascades naturelles de chocolat</item>
+        <item>Raffinage des cacaotiers</item>
+        <item>Pluies de chocolat</item>
+        <item>Dérèglement climatique</item>
+        <item>Générateur de pollution</item>
+        <item>Remise carbone</item>
+        <item>Chasse aux écologistes</item>
+        <item>Incinération des corps</item>
+        <item>Pollution spatiale</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_freezer" translatable="false">
+        <item>Réglage des thermostats</item>
+        <item>Isolants améliorés</item>
+        <item>Rêne des neiges</item>
+        <item>Rêne libérée et délivrée</item>
+        <item>Monarchie absolue</item>
+        <item>Taxe sur les combustibles</item>
+        <item>Chauffe-eaux illégaux</item>
+        <item>Tests de tempérament</item>
+        <item>Réouverture des goulags</item>
+        <item>Marché de neige éternelle</item>
+        <item>Zéro absolu</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_2n2222" translatable="false">
+        <item>Silicium</item>
+        <item>Germanium</item>
+        <item>Nitrure de gallium phasé</item>
+        <item>Antimoniure renforcé à l\'indium</item>
+        <item>Composite de tungstène</item>
+        <item>Trempage cinétique</item>
+        <item>Adamantium vibrant</item>
+        <item>Cristaux de péroxide</item>
+        <item>Hydrobium super critique</item>
+        <item>Anti-protons déchargés</item>
+        <item>Élément zéro</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_lm748" translatable="false">
+        <item>Comparateur</item>
+        <item>Suiveur</item>
+        <item>Amplificateur inverseur</item>
+        <item>Théorème de Thoris</item>
+        <item>Chargeur saturé</item>
+        <item>Cycle hystérésis différentiel</item>
+        <item>Interrupteur de Kolen</item>
+        <item>Millman</item>
+        <item>Intégrateur cyclique parfait</item>
+        <item>Déphaseur de champs</item>
+        <item>Impédance négative</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_74hc4040" translatable="false">
+        <item>Compteur binaire</item>
+        <item>Compteur code gray</item>
+        <item>Comptage deux par deux</item>
+        <item>Compteur kilobinairique</item>
+        <item>Compteur quantique profond</item>
+        <item>Compteur non causal</item>
+        <item>Compteur Linky</item>
+        <item>Compteur neutrinique</item>
+        <item>120 secondes par minute</item>
+        <item>Compteur à champs phasés</item>
+        <item>Counter strike</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_atmega328" translatable="false">
+        <item>Led clignotantes</item>
+        <item>Pull up et pull down</item>
+        <item>Multiplications</item>
+        <item>Puissances</item>
+        <item>Résolutions géométriques</item>
+        <item>Systèmes d\'équations</item>
+        <item>Nombres quantiques</item>
+        <item>Problèmes de Rochman</item>
+        <item>Générateur de Kumchev-Koriv</item>
+        <item>Hyperbolisme neuronique</item>
+        <item>Émulation de Pac-man</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_kernel" translatable="false">
+        <item>Claviers à membranes</item>
+        <item>Claviers \"old school\"</item>
+        <item>Distributeur de chips</item>
+        <item>Goodies de star wars</item>
+        <item>Festival du gras</item>
+        <item>Caleçon anti-raie-des-fesses</item>
+        <item>Shampoing bouclant</item>
+        <item>Verres double épaisseur</item>
+        <item>Secte de Linux</item>
+        <item>Rituel super NES</item>
+        <item>Sacrifices d\'otaku</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_networks" translatable="false">
+        <item>Signaux de fumés</item>
+        <item>Pigeons voyageurs</item>
+        <item>Palantír</item>
+        <item>Téléphone arabe</item>
+        <item>Code morse</item>
+        <item>Communication orale</item>
+        <item>Langue des signes</item>
+        <item>Langage corporel</item>
+        <item>Combats à mains nues</item>
+        <item>Télépathie</item>
+        <item>L\'oeil de Sauron</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_robotics" translatable="false">
+        <item>Cartes Arduino</item>
+        <item>Capteurs photosensibles</item>
+        <item>Synthétisation de la voix</item>
+        <item>Emplois mécanisés</item>
+        <item>Test de Turing</item>
+        <item>Simulations neurales</item>
+        <item>Électronique consciente</item>
+        <item>Résolution de la surpopulation</item>
+        <item>Hiver nucléaire</item>
+        <item>Ferme d\'êtres humains</item>
+        <item>Conscience artificielle unique</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_earth" translatable="false">
+        <item>Parachutes</item>
+        <item>Moteur à hydrogène</item>
+        <item>Retouche photos</item>
+        <item>Hologramme de l\'ISS</item>
+        <item>Agents extraterrestres</item>
+        <item>Zone 51</item>
+        <item>Détournement de fonds</item>
+        <item>Réseau illuminati</item>
+        <item>Agents de désinformation</item>
+        <item>Amnésiques chimiques</item>
+        <item>Nouvel ordre mondial</item>
+    </string-array>
+    <string-array name="clicker_upgrade_supplements" translatable="false">
+        <item>Banane</item>
+        <item>Cassis</item>
+        <item>Mûre</item>
+        <item>Oignon</item>
+        <item>Pêche</item>
+        <item>Fraise</item>
+        <item>Framboise</item>
+        <item>Groseille</item>
+        <item>Melon</item>
+        <item>Tomate</item>
+        <item>Salade</item>
+        <item>Ail</item>
+        <item>Noisette</item>
+        <item>Cerise</item>
+        <item>Chou</item>
+        <item>Rhubarbe</item>
+        <item>Aubergine</item>
+        <item>Patate</item>
+        <item>Raisin</item>
+        <item>Courgette</item>
+        <item>Potiron</item>
+        <item>Orange</item>
+        <item>Prune</item>
+        <item>Noix de coco</item>
+        <item>Clémentine</item>
+        <item>Abricot</item>
+        <item>Carotte</item>
+        <item>Poireau</item>
+        <item>Poire</item>
+        <item>Pomme</item>
+        <item>Ananas</item>
+        <item>Citron</item>
+        <item>Champignon</item>
+    </string-array>
+    <string-array name="clicker_ingredients_description" translatable="false">
+        <item>Aussi bon que pas cher…</item>
+        <item>Un classique !</item>
+        <item>Hmm ! Caramel !</item>
+        <item>C\'est quoi ton parfum préféré ?</item>
+        <item>Sûrement la garniture la plus populaire !</item>
+        <item>Pour des campagnes BDE réussies !</item>
+        <item>Un peu de piquant</item>
+        <item>Un goût pour le moins… Amplifié</item>
+        <item>Il faut bien compter toutes ces crêpes</item>
+        <item>Smartcrepes</item>
+        <item>À le pouvoir de faire venir des geeks !</item>
+        <item>Oh, tu vas en avoir besoin, crois-moi</item>
+        <item>Comment ça \"des outils pour le ramonage\" ?</item>
+        <item>Un pas de géant dans le domaine des crêpes</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_butter_description" translatable="false">
+        <item>Un classique !</item>
+        <item>Un petit goût exotique</item>
+        <item>Peut-on avoir le beurre et l\'argent du beurre ? \"Oui\" d\'après notre économiste</item>
+        <item>Le goûter, c\'est l\'adopter !</item>
+        <item>Fait par les hommes pour les hommes</item>
+        <item>Qui va s\'en plaindre ?</item>
+        <item>Du Beurre de chez moi !</item>
+        <item>C\'est bien la même chose, non ?</item>
+        <item>Qui n\'a jamais utilisé du beurre pour lubrifier ?</item>
+        <item>C\'est un marché comme un autre !</item>
+        <item>Après la croûte, il y a le pu !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_sugar_description" translatable="false">
+        <item>C\'est beaucoup plus facile à étaler</item>
+        <item>Rend heureux les chichiens… Et nos employés</item>
+        <item>Délicat et si fragile</item>
+        <item>Diggy diggy hole</item>
+        <item>Récolté ce matin même !</item>
+        <item>Encore plus doux que dans vos rêves</item>
+        <item>Le malheur des uns fait le bonheur des autres</item>
+        <item>La drogue la plus addictive des deux est bien le sucre !</item>
+        <item>Brille dans le noir !</item>
+        <item>Un pacte avec le diable. Très avantageux !</item>
+        <item>Si l\'argent n\'a pas d\'odeur, il a goût bien sucré !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_caramel_description" translatable="false">
+        <item>Beaucoup plus facile à étaler que le caramel cristallisé</item>
+        <item>Un carmel mais pas bon… Pourquoi les gens en mangent déjà ?</item>
+        <item>C\'est fort en chocol… Merde non, carmel !</item>
+        <item>Ça colle partout !</item>
+        <item>Il nous manque juste un nom… Caramelotier ?</item>
+        <item>La sélection naturelle ? C\'est bien trop lent !</item>
+        <item>Ça rajoute du goût</item>
+        <item>Douce industrie</item>
+        <item>Une main d\'oeuvre jeune, dynamique et en bonne santé !</item>
+        <item>Le caramel, c\'est beaucoup moins cher que l\'argent</item>
+        <item>Hé ! Il fallait juste y penser !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_jam_description" translatable="false">
+        <item>Ça compte comme un pléonasme ?</item>
+        <item>Si onctueux !</item>
+        <item>Bien sûr, le sucre c\'est bien moins cher</item>
+        <item>\"Je suis l\'Éternel, et il n\'y en a point d\'autre, Hors moi il n\'y a point de Dieu.\" Confitaïe 45:5</item>
+        <item>Un rituel compliqué impliquant une tartine grillé, du beurre végétal et un chat</item>
+        <item>Que nos offrandes soient acceptées et nos prières entendues</item>
+        <item>Pour le goût et la texture</item>
+        <item>Que les impies soient condamnés à rejoindre le créateur par la force</item>
+        <item>Le seigneur est éternel, mais pas son corps</item>
+        <item>Ceux qui répandent la voix du seigneur doivent alimenter le corps du créateur</item>
+        <item>Que nos fidèles prouvent leur dévotion à l\'éternel par ce don à l\'église</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_chocolate_description" translatable="false">
+        <item>Plus pratique que les tablettes</item>
+        <item>Hmmmmm</item>
+        <item>Une découverte géographique majeur !</item>
+        <item>Un de nos ingénieurs à eu l\'idée de raffiner directement le cacaotier !</item>
+        <item>La condensation des vapeurs de chocolat de nos usines forme des épais nuages marron</item>
+        <item>Plus il fait chaud, plus on a de cacao !</item>
+        <item>Une idée brillante !</item>
+        <item>Parce que le climat est un bien public mondial</item>
+        <item>Pourquoi ne veulent-ils pas admettre que le réchauffement climatique est une bonne chose ? Une bonne chose pour nous, je veux dire</item>
+        <item>D\une pierre deux coups !</item>
+        <item>Rien n\'arrête le progrès !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_freezer_description" translatable="false">
+        <item>Ah ! Alors c\'est comme ça que ça marche !</item>
+        <item>Garde le froid à sa place</item>
+        <item>Son nom, c\'est Elsa</item>
+        <item>Elle ne mentira plus jamais</item>
+        <item>Un pouvoir à glacer le sang</item>
+        <item>Ça va jeter un froid…</item>
+        <item>Ça a fait l\'effet d\'une douche froide à certain</item>
+        <item>Il faut savoir faire preuve de sang-froid</item>
+        <item>Ça fait froid dans le dos, non ?</item>
+        <item>Enfin un produit où les prix ne fondent pas !</item>
+        <item>Trop frais ! Littéralement…</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_2n2222_description" translatable="false">
+        <item>Un semi-conducteur bien connu de tous</item>
+        <item>Un semi-conducteur moins bien connu de tous</item>
+        <item>Un semi-conducteur inconnu de tous</item>
+        <item>Un… Truc… Qui n\'existe pas ?</item>
+        <item>Pour plus de bip</item>
+        <item>Ça fait bip sans faire paf</item>
+        <item>\"Les cristaux sont polarisés, mais ça va de soit\" affirme un ingénieur</item>
+        <item>Fabriqué à partir de bière et de plaques de cuivre</item>
+        <item>C\'est dangereux ?</item>
+        <item>\"Tous ceux à qui j\'ai demandé des explications se sont enfuit en courant\" Avoue le directeur</item>
+        <item>Une matière tellement puissante que ne peut pas l\'utiliser. Passionnant !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_lm748_description" translatable="false">
+        <item>Compare deux tensions</item>
+        <item>Reproduit la tension en entrée sans l\'altérer</item>
+        <item>Amplifie la tension en sortie et inverse sa valeur</item>
+        <item>Prouve que toute intensité parcourant un dipôle phasé est le résultat d\'une réaction en tension</item>
+        <item>Réarrange la structure électronique dans la couche isolante d\'un condensateur</item>
+        <item>Le scientifique qui a inventé le processus m\'a avoué qu\'il y avait une blague dans le nom. J\'ai toujours pas compris…</item>
+        <item>\"Ça bloque parfois… Et ça débloque d\'autres fois…\" extrait de la documentation technique</item>
+        <item>Notre héros à tous !</item>
+        <item>Intègre de manière cyclique… J\'avoue que je n\'ai pas compris grand chose…</item>
+        <item>Quoi ? On arrive encore à inventer des trucs ?</item>
+        <item>Attendez… Mais ça existe vraiment ça !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_74hc4040_description" translatable="false">
+        <item>0 1 10 11 100 101 110 111 etc.</item>
+        <item>0 1 11 10 110 111 101 100 etc.</item>
+        <item>Ça compte au moins deux fois plus vite !</item>
+        <item>1000 fois plus efficace par définition</item>
+        <item>Trouve le bon nombre en racine de n fois d\'opération !</item>
+        <item>Trouve le bon nombre instantanément. C\'est dur à croire au début…</item>
+        <item>Une saloperie</item>
+        <item>Un compteur qui lit dans vos pensées pour trouver le bon nombre</item>
+        <item>Hé ! Ça compte deux fois plus vite comme ça ! Simplicité</item>
+        <item>Tant que ça fonctionne…</item>
+        <item>Très marrant, merci Pierre !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_atmega328_description" translatable="false">
+        <item>Bip bip flash bip</item>
+        <item>Pour un processeur musclé</item>
+        <item>Je n\'ai jamais appris mes tables de multiplication</item>
+        <item>Des multiplications de multiplications</item>
+        <item>Enfin, on va pouvoir y voir plus clair !</item>
+        <item>L\'humanité enfin délivré de la résolution de ce genre de truc long et chiant</item>
+        <item>Des nombre qui sont et ne sont pas vraiment, sans avoir l\'impression d\'être en même temps</item>
+        <item>Un scientifique pose toujours plus de problème qu\'il n\'en résout</item>
+        <item>Sûrement l\'invention la plus importante de notre siècle</item>
+        <item>Un processeur avec une architecture neuronale. À quoi ça peut donc servir ?</item>
+        <item>La véritable utilité d\'un ordinateur</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_kernel_description" translatable="false">
+        <item>Le top du top des claviers</item>
+        <item>Quoi ? Vous préférez vraiment ce truc rouillé ?!</item>
+        <item>\"Il faut bien graisser les claviers\" affirme un employé</item>
+        <item>Ils ont failli m\'arracher la main quand je leur ai donné…</item>
+        <item>Pour les encourager à créer des liens sociaux</item>
+        <item>Une autre arme pour faciliter la communication</item>
+        <item>Augmente l\'intelligence de 5 points !</item>
+        <item>Ah ! C\'est donc ça que j\'étais en train de coder !</item>
+        <item>\"UNIXons nous contre les hérétiques\" devise de la secte \"Linux ou rien\"</item>
+        <item>Un rituel très curieux et pas très beau à voir…</item>
+        <item>Un sacré bain de sang !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_networks_description" translatable="false">
+        <item>Ah ! Il y a un pyromane par là-bas</item>
+        <item>Un taux de perte de 100%… C\'est de ma faute s\'ils comprennent pas le français ?</item>
+        <item>Utiliser par Saruman durant la grande guerre de la terre du milieu</item>
+        <item>Pas très fiable mais pas cher</item>
+        <item>bip bip biiiiip bip biiiip bip</item>
+        <item>On peut aussi se parler, non ? Tu m\'écoutes ? Wouhou…</item>
+        <item>…</item>
+        <item>Comment on dit \"les changements qui arrivent dans le mouvement sont proportionnels à la force motrice\" en langage corporel ?</item>
+        <item>\"You do not truly know someone until you fight them.\" Seraph, Matrix reloaded</item>
+        <item>L\'art de se comprendre sans se parler</item>
+        <item>\"I see you\" Sauron. Une communication unilatérale seulement cependant…</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_robotics_description" translatable="false">
+        <item>Ou plutôt, leur équivalent chinois…</item>
+        <item>Je te vois !</item>
+        <item>Je. Suis. Vivant.</item>
+        <item>Permet de voir à quel point un robot simule l\'esprit humain</item>
+        <item>Une main d\'oeuvre qui travaille 24h/24 et 7j/7, le rêve !</item>
+        <item>Ce ne sont que des machines, vrai ?</item>
+        <item>Le nom fait peur mais il n\'y a rien à craindre !</item>
+        <item>\"C\'était le choix le plus logique\"</item>
+        <item>Oups…</item>
+        <item>Utiliser la chaleur humaine pour produire de l\'électricité pendant qu\'ils vivent une vie dans une simulation ? Ça marchera jamais !</item>
+        <item>\"Je suis nous, nous somme éternel\"</item>
+    </string-array>
+    <string-array name="clicker_upgrade_ingredient_earth_description" translatable="false">
+        <item>Bha oui… Il fait juste y penser…</item>
+        <item>Un de type de moteur beaucoup plus puissant ! (Et écologique)</item>
+        <item>Des programmes génèrent des photos de la terre ronde toutes les demi-heures</item>
+        <item>Un projecteur projette l\'image d\'une station spatiale dans le ciel. Illusion terre ronde garanti !</item>
+        <item>Nos alliés d\'une autre planète aimeraient une place dans notre société</item>
+        <item>Une ville entièrement composé d\'extraterrextres ! Placé sous contrôle militaire bien sûr</item>
+        <item>Une chose est sûre : on se paye bien leur tête !</item>
+        <item>Des élites surveillent la population pour détruire toute révolte</item>
+        <item>Plus besoin de détruire la résistance si elle n\'existe plus !</item>
+        <item>Encore un progrès vers la domination mondiale !</item>
+        <item>Enfin, le monde est sous notre contrôle !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_supplements_description" translatable="false">
+        <item>Phalique mais si bon…</item>
+        <item>Cassea, cassea, cassas, cassarum, cassis, cassis</item>
+        <item>Blackberry en anglais, marque menacée d\'extinction</item>
+        <item>Hmmm… C\'est meilleur fris…</item>
+        <item>C\'est tout doux !</item>
+        <item>Le fruit le plus célèbre !</item>
+        <item>Une autre célébrité</item>
+        <item>On peut même en faire du vin</item>
+        <item>Melon Melèche</item>
+        <item>Il y a de quoi rougir !</item>
+        <item>Ne me raconte pas de salades</item>
+        <item>Ouch ça doit faire mal</item>
+        <item>Croquant</item>
+        <item>Illustrées toujours par deux…</item>
+        <item>Trop chou</item>
+        <item>Rhubarbe et rhumoustache</item>
+        <item>C\'est censé ressembler à un pénis ?</item>
+        <item>\"My life is potato\"</item>
+        <item>T\'as bien raisin</item>
+        <item>Voilà ! Ça, ça ressemble à un pénis</item>
+        <item>Grandcarré</item>
+        <item>Très pressé</item>
+        <item>Un super laxatif</item>
+        <item>Cocorico ?</item>
+        <item>#ClémentEn3A</item>
+        <item>Pourquoi si acide et si amer ?</item>
+        <item>T\as déjà vu une carotte raper ?</item>
+        <item>C\'est juste un oignon qui n\'a pas fini de pousser…</item>
+        <item>On se fend la poire, non ?</item>
+        <item>Une petite pensée pour les gens qui achètent Apple !</item>
+        <item>Shoananas ! #Dieudonné</item>
+        <item>Rond comme un ballon et plus jaune qu\'un citron […]</item>
+        <item>Pur MST</item>
+    </string-array>
+    <string-array name="clicker_upgrade_gloves_name" translatable="false">
+        <item>Gant en cuire</item>
+        <item>Gant en cuivre</item>
+        <item>Gant en fer</item>
+        <item>Gant en gallium</item>
+        <item>Gant en acier</item>
+        <item>Gant en argent</item>
+        <item>Gant en or</item>
+        <item>Gant en titane</item>
+        <item>Gant en tungstène</item>
+        <item>Gant en obsidienne</item>
+        <item>Gant en diamant</item>
+        <item>Gant en adamantium</item>
+    </string-array>
+    <string-array name="clicker_upgrade_gloves_description" translatable="false">
+        <item>Un gant en cuire, usé par quelques soirées obscures…</item>
+        <item>Un magnifique gant en cuivre ! Restez juste loin de l\'électronique</item>
+        <item>Il a appartenu à Theodoor Cornet au XIVème siècle lors de croisade d\'Alexandrie !</item>
+        <item>Un matériau qui fond au contact de la peau. Ça fera un super gant !</item>
+        <item>Là on rentre dans le dur !</item>
+        <item>Il fait mal aux yeux tellement il est brillant…</item>
+        <item>Il vous a coûté cher, mais il est claaasse !</item>
+        <item>Dur, léger et… Cher</item>
+        <item>Matériau utilisé pour l\'usinage de l\'acier. Ça en dit gros !</item>
+        <item>Attention, il est encore chaud</item>
+        <item>Aveugle ceux qui tente de le regarder à l\'oeil nu !</item>
+        <item>Coupe le diamant comme si c\'était du beurre !</item>
+    </string-array>
+    <string-array name="clicker_upgrade_golden_name" translatable="false">
+        <item>Loterie du village</item>
+        <item>Jeux concours sur Internet</item>
+        <item>Loto</item>
+    </string-array>
+    <string-array name="clicker_upgrade_golden_description" translatable="false">
+        <item>\"Vend BD de \'Touche pas à mon poste\'. Encore sous blister…\"</item>
+        <item>La légende raconte qu'il est peut-être possible que le gagant reçoive le prix un jour</item>
+        <item>Le racket à l'échelle nationnale !</item>
     </string-array>
 </resources>

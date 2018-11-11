@@ -147,4 +147,11 @@
         <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
         <item name="colorAccent">@color/colorOrangeAccent</item>
     </style>
+
+    <!-- *********** Clicker theme -->
+    <style name="ClickerTheme" parent="DarkBaseTheme">
+        <item name="colorPrimary">@color/clicker_primary</item>
+        <item name="colorPrimaryDark">@color/clicker_primary_dark</item>
+        <item name="colorAccent">@color/clicker_primary</item>
+    </style>
 </resources>

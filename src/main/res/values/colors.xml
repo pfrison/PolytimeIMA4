@@ -46,4 +46,23 @@
     <color name="dark_background">#202020</color>
     <color name="dark_button_background">#505050</color>
     <color name="dark_popup_background">#303030</color>
+
+    <!-- Clicker -->
+    <color name="clicker_primary">#aa7e54</color>
+    <color name="clicker_primary_dark">#905f30</color>
+    <color name="clicker_golden">#ffdd00</color>
+    <color name="clicker_golden_text_background">#a0000000</color>
+
+    <!-- Clicker upgrades -->
+    <color name="upgrade_power_0">#FF8000</color>
+    <color name="upgrade_power_1">#EFEF00</color>
+    <color name="upgrade_power_2">#67CE00</color>
+    <color name="upgrade_power_3">#008C00</color>
+    <color name="upgrade_power_4">#00E572</color>
+    <color name="upgrade_power_5">#00BCBC</color>
+    <color name="upgrade_power_6">#007FFF</color>
+    <color name="upgrade_power_7">#4242FF</color>
+    <color name="upgrade_power_8">#7F00FF</color>
+    <color name="upgrade_power_9">#FF00FF</color>
+    <color name="upgrade_power_10">#FF0054</color>
 </resources>

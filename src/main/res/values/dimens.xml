@@ -6,6 +6,8 @@
 
     <dimen name="main_panel_padding">2dp</dimen>
 
+    <dimen name="time_table_day_width">130dp</dimen>
+
     <dimen name="midday_border_width">2dp</dimen>
     <dimen name="lesson_border_width">1dp</dimen>
     <dimen name="lesson_border_width_negative">-1dp</dimen>
@@ -38,11 +40,21 @@
     <dimen name="spinner_adapt_color_margin_start">5dp</dimen>
     <dimen name="spinner_adapt_color_margin_vertical">2dp</dimen>
     <dimen name="spinner_adapt_color_width">20dp</dimen>
-    <dimen name="spinner_adapt_version_width">60dp</dimen> <!-- should be 3 * spinner_adapt_color_width -->
+    <dimen name="spinner_adapt_version_width">60dp
+    </dimen> <!-- should be 3 * spinner_adapt_color_width -->
 
     <!-- Achievement -->
     <dimen name="achievement_root_padding">5dp</dimen>
     <dimen name="achievement_image_size">100dp</dimen>
     <dimen name="achievement_popup_margin_text">10dp</dimen>
     <dimen name="achievement_popup_padding_bottom">5dp</dimen>
+
+    <!-- Clicker -->
+    <dimen name="clicker_item_icon_size">50dp</dimen>
+    <dimen name="clicker_item_padding">5dp</dimen>
+    <dimen name="clicker_golden_crepe_size">70dp</dimen>
+    <dimen name="clicker_golden_effect">80dp</dimen>
+
+    <!-- Widgets -->
+    <dimen name="widget_margin">8dp</dimen>
 </resources>

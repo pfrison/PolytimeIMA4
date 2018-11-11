@@ -4,6 +4,10 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="wrong">Wrong</string>
+    <string name="hours">hours</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="copy_to_clipboard_success">Save copied to clipboard</string>
+    <string name="load">Load</string>
 
     <string name="ctrl_panel_time_table">Time table :</string>
     <string name="ctrl_panel_week_selection">Week selection :</string>
@@ -71,4 +75,84 @@
 
     <string name="dont_show_notifications">Polytime\'s notifications disabled</string>
     <string name="dont_show_notifications_action">Don\'t show this notification</string>
+
+    <!-- Clicker -->
+    <string name="main_menu_clicker">Crepe clicker</string>
+    <string name="clicker_0_money">0 crepe</string>
+    <string name="clicker_0_money_per_sec">0 crepe/s</string>
+    <string name="clicker_money">crepe</string>
+    <string name="clicker_moneys">crepes</string>
+    <string name="clicker_money_per_sec">crepe/s</string>
+    <string name="clicker_moneys_per_sec">crepes/s</string>
+    <string name="clicker_cost">Cost :</string>
+    <string name="clicker_ingredients">Ingredients :</string>
+    <string name="clicker_upgrades">Upgrades :</string>
+
+    <string name="clicker_menu_stats">Statistics</string>
+    <string name="clicker_menu_wipe_save">Wipe save</string>
+    <string name="clicker_menu_export_save">Export save</string>
+    <string name="clicker_menu_import_save">Import save</string>
+    <string name="clicker_wipe_save_popup_title">Wipe save ?</string>
+    <string name="clicker_wipe_save_popup_message">Do you really want to delete your progress ?\nThis cannot be undone !\n(You will keep your achievements)</string>
+    <string name="clicker_export_save_popup_title">Export save</string>
+    <string name="clicker_export_save_popup_message">This is your safe code :\n(copy it and keep it to somewhere safe)</string>
+    <string name="clicker_import_save_popup_title">Import save</string>
+    <string name="clicker_import_save_popup_message">Paste your save code :\n(current save will be erased !)</string>
+
+    <string name="million">million</string>
+    <string name="millions">million</string>
+    <string name="billion">billion</string>
+    <string name="billions">billion</string>
+    <string name="trillion">trillion</string>
+    <string name="trillions">trillion</string>
+    <string name="quadrillion">quadrillion</string>
+    <string name="quadrillions">quadrillion</string>
+    <string name="quintillion">quintillion</string>
+    <string name="quintillions">quintillion</string>
+    <string name="sextillion">sextillion</string>
+    <string name="sextillions">sextillion</string>
+    <string name="septillion">septillion</string>
+    <string name="septillions">septillion</string>
+    <string name="octillion">octillion</string>
+    <string name="octillions">octillion</string>
+    <string name="nonillion">nonillion</string>
+    <string name="nonillions">nonillion</string>
+    <string name="decillion">decillion</string>
+    <string name="decillions">decillion</string>
+    <string name="undecillion">undecillion</string>
+    <string name="undecillions">undecillion</string>
+    <string name="duodecillion">duodecillion</string>
+    <string name="duodecillions">duodecillion</string>
+    <string name="tredecillion">tredecillion</string>
+    <string name="tredecillions">tredecillion</string>
+    <string name="quattuordecillion">quattuordecillion</string>
+    <string name="quattuordecillions">quattuordecillion</string>
+    <string name="quindecillion">quindecillion</string>
+    <string name="quindecillions">quindecillion</string>
+    <string name="infinity">Infinity</string>
+
+    <string name="clicker_total_made_crepes">Crepes made :</string>
+    <string name="clicker_total_hand_made_crepes">Handmade crepes :</string>
+    <string name="clicker_time_played">Time played :</string>
+    <string name="clicker_golden_clicked">Golden crepes clicked :</string>
+    <string name="clicker_flavors_stats">Ingredients statistics :</string>
+    <string name="clicker_upgrades_bought">Upgrades bought :</string>
+    <string name="clicker_produce_one">One produce :</string>
+    <string name="clicker_produce_all">All produce :</string>
+
+    <string name="clicker_double" translatable="false">Éfficacité %1$s doublé</string>
+    <string name="clicker_supplements" translatable="false">Multiplie la production par +%1$d%%</string>
+    <string name="clicker_upgrade_butter_whole" translatable="false">Les cliques et la production de beurre sont augmentés de +%1$d pour chaque ingrédient possédé</string>
+    <string name="clicker_upgrade_butter_decimal" translatable="false">Les cliques et la production de beurre sont augmentés de +%1$,.1f pour chaque ingrédient possédé</string>
+    <string name="clicker_upgrade_golden_1" translatable="false">Les crêpes en or apparaissent deux fois plus souvent et reste deux fois plus longtemps</string>
+    <string name="clicker_upgrade_golden_2" translatable="false">La durée des bonus des crêpes en or est doublé</string>
+    <string name="clicker_upgrade_glove" translatable="false">Les cliques rapportent +1% de la production</string>
+    <string name="clicker_golden_instant_gain" translatable="false">Chanceux !\n+%1$s</string>
+    <string name="clicker_golden_light_gain" translatable="false">Boost !\nProduction x7 pendant +%1$d secondes</string>
+    <string name="clicker_golden_high_gain" translatable="false">Rush !\nGain des cliques x777 pendant +%1$d secondes</string>
+    <string name="golden_crepes">golden crepes</string>
+
+    <!-- Widgets -->
+    <!--<string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>-->
 </resources>
