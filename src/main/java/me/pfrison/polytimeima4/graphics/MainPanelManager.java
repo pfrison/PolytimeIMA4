@@ -31,7 +31,7 @@ public class MainPanelManager {
         root.removeAllViews();
     }
 
-    private static void refreshTimeTable(final Activity activity, int animation){
+    private static void refreshTimeTable(final MainActivity activity, int animation){
         final FrameLayout root = activity.findViewById(R.id.main_panel);
 
         Runnable refresh = new Runnable() {
@@ -100,7 +100,7 @@ public class MainPanelManager {
         activity.detectAchievementBoring(timeTable);
     }
 
-    public static void prevWeek(Activity activity){
+    public static void prevWeek(MainActivity activity){
         if(MainPanelManager.timeTable == null) return;
         if(MainPanelManager.showedWeek - 1 < 0)
             return;
@@ -108,13 +108,13 @@ public class MainPanelManager {
         refreshTimeTable(activity, PREV);
     }
 
-    public static void currentWeek(Activity activity){
+    public static void currentWeek(MainActivity activity){
         if(MainPanelManager.timeTable == null) return;
         MainPanelManager.showedWeek = TimeTableUtil.getCurrentWeekInt(MainPanelManager.timeTable, true);
         refreshTimeTable(activity, CURRENT);
     }
 
-    public static void nextWeek(Activity activity){
+    public static void nextWeek(MainActivity activity){
         if(MainPanelManager.timeTable == null) return;
         if(MainPanelManager.showedWeek + 1 >= MainPanelManager.timeTable.weeks.length)
             return;

@@ -1,9 +1,7 @@
 package me.pfrison.polytimeima4.android;
 
-import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,8 +12,8 @@ import android.widget.Spinner;
 
 import java.util.Arrays;
 
-import me.pfrison.polytimeima4.Achievements.Achievement;
-import me.pfrison.polytimeima4.Achievements.AchievementPopup;
+import me.pfrison.polytimeima4.achievements.Achievement;
+import me.pfrison.polytimeima4.achievements.AchievementPopup;
 import me.pfrison.polytimeima4.R;
 import me.pfrison.polytimeima4.graphics.style.Style;
 import me.pfrison.polytimeima4.graphics.style.StyleColorArrayAdapter;

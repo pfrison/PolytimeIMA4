@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/clicker_background" >
+
+    <!-- Clicker golden effects -->
+
+    <RelativeLayout
+        android:id="@+id/clicker_golden_effect_sides"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_alignParentStart="true"
+            android:background="@mipmap/golden_effect_left"
+            android:layout_width="@dimen/clicker_golden_effect"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/golden_effect_right"
+            android:layout_width="@dimen/clicker_golden_effect"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/golden_effect_top"
+            android:layout_height="@dimen/clicker_golden_effect"
+            android:layout_width="match_parent" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/golden_effect_bottom"
+            android:layout_height="@dimen/clicker_golden_effect"
+            android:layout_width="match_parent" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/clicker_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/clicker_light_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/clicker_light_1" />
+
+            <ImageView
+                android:id="@+id/clicker_light_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/clicker_light_2" />
+
+            <ImageView
+                android:id="@+id/clicker_crepe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/crepe" />
+
+            <TextView
+                android:text="@string/clicker_0_money"
+                android:textAllCaps="true"
+                android:layout_below="@id/clicker_crepe"
+                android:id="@+id/clicker_counter"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/clicker_0_money_per_sec"
+                android:layout_below="@id/clicker_counter"
+                android:id="@+id/clicker_counter_ps"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ingredients_text"
+                android:layout_below="@id/clicker_counter_ps"
+                android:text="@string/clicker_ingredients"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/clicker_ingredients_root"
+                android:layout_below="@id/ingredients_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/clicker_upgrade_background"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <!-- added programmatically -->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/upgrade_text"
+                android:layout_below="@id/clicker_ingredients_root"
+                android:text="@string/clicker_upgrades"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/clicker_upgrades_root"
+                android:layout_below="@id/upgrade_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/clicker_upgrade_background"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <!-- added programmatically -->
+
+            </LinearLayout>
+
+            <!-- Click text added programmatically -->
+
+            <!-- golden crepe added programmatically -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Golden text -->
+
+    <TextView
+        android:id="@+id/clicker_golden_text"
+        android:alpha="0"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@drawable/clicker_golden_text_background"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <!-- Achievements -->
+
+    <include layout="@layout/achievements_popup" />
+</RelativeLayout>

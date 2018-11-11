@@ -18,6 +18,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(Style.getThemeResIdFromPreferences(this));
+        setTitle(getResources().getString(R.string.main_menu_settings));
 
         // fix style
         // action bar

@@ -3,6 +3,7 @@ package me.pfrison.polytimeima4.utils;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -28,6 +29,20 @@ public class Util {
             return null;
         }
         return cal;
+    }
+
+    public static int[] arrayListInttoArrayInt(ArrayList<Integer> arrayList){
+        int[] array = new int[arrayList.size()];
+        for(int i=0; i<arrayList.size(); i++)
+            array[i] = arrayList.get(i);
+        return array;
+    }
+
+    public static boolean[] arrayListInttoArrayBoolean(ArrayList<Integer> arrayList){
+        boolean[] array = new boolean[arrayList.size()];
+        for(int i=0; i<arrayList.size(); i++)
+            array[i] = arrayList.get(i) >= 1;
+        return array;
     }
 
     public static String strangeCode(String string){

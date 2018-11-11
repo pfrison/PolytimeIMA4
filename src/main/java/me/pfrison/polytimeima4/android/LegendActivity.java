@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import me.pfrison.polytimeima4.Achievements.Achievement;
-import me.pfrison.polytimeima4.Achievements.AchievementPopup;
+import me.pfrison.polytimeima4.achievements.Achievement;
+import me.pfrison.polytimeima4.achievements.AchievementPopup;
 import me.pfrison.polytimeima4.R;
 import me.pfrison.polytimeima4.graphics.style.Style;
 
@@ -19,6 +19,7 @@ public class LegendActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(Style.getThemeResIdFromPreferences(this));
+        setTitle(getResources().getString(R.string.main_menu_legend));
         setContentView(R.layout.activity_legend);
 
         // achievements

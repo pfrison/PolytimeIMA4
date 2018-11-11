@@ -118,4 +118,52 @@ public class Animator {
                     }
                 });
     }
+
+    public static void animateBump(final View view){
+        view.setScaleX(1f);
+        view.setScaleY(1f);
+        view.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(50)
+                .setListener(null);
+    }
+
+    public static void animateFadeAway(final View view){
+        view.setAlpha(1f);
+        view.setTranslationY(0f);
+        view.animate()
+                .alpha(0f)
+                .translationY(-500)
+                .setDuration(2000)
+                .setListener(null);
+    }
+
+    public static void animateAppearUp(final View view){
+        view.setAlpha(0f);
+        view.setTranslationY(200);
+        view.animate()
+                .alpha(1f)
+                .translationY(0)
+                .setDuration(500)
+                .setListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(android.animation.Animator animation) {
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                animateDisappearAlpha(view);
+                            }
+                        }, 3000);
+                    }
+                });
+    }
+
+    private static void animateDisappearAlpha(final View view){
+        view.setAlpha(1f);
+        view.animate()
+                .alpha(0f)
+                .setDuration(500)
+                .setListener(null);
+    }
 }

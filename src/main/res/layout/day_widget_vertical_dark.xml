@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="@color/dark_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/day_widget_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_1_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_1_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/day_widget_midday"
+        android:background="@color/lesson_border"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/midday_border_width" />
+
+    <TextView
+        android:id="@+id/day_widget_2_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_2_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_2_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/day_widget_2_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/lesson_border"
+        android:textSize="16sp" />
+</LinearLayout>

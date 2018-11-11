@@ -5,6 +5,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
@@ -27,18 +28,19 @@ public class NotificationService extends Service {
     private boolean active = true;
     private Context context;
     private NotificationManagerCompat notificationManager;
+    private boolean notificationNotified;
 
+    private Handler refreshHandler;
     private Runnable refreshNotification = new Runnable() {
         @Override
         public void run() {
-            while(active){
-                // user asked for notification ?
-                if(pref.getBoolean("enableNotification", false)){
-                    Lesson nextLesson = TimeTableUtil.getNextLesson10Mins(MainPanelManager.timeTable);
-                    if(nextLesson == null) {
-                        notificationManager.cancelAll();
-                        continue;
-                    }
+            // user asked for notification ?
+            if(pref.getBoolean("enableNotification", false)){
+                Lesson nextLesson = TimeTableUtil.getNextLesson30Mins(MainPanelManager.timeTable);
+                if(nextLesson == null) {
+                    notificationManager.cancelAll();
+                    notificationNotified = false;
+                }else if(!notificationNotified){
                     boolean minimal = pref.getBoolean("priorityMinimal", true);
                     NotificationCompat.Builder notifBuilder = new NotificationCompat.Builder(context, channelID)
                             .setSmallIcon(R.drawable.ic_notification)
@@ -52,10 +54,13 @@ public class NotificationService extends Service {
                             .setShowWhen(false)
                             .setAutoCancel(false);
                     notificationManager.notify(notificationID,  notifBuilder.build());
+                    notificationNotified = true;
                 }
-                // sleep
-                try {Thread.sleep(sleepDuration);} catch (InterruptedException e) {e.printStackTrace();}
             }
+
+            // continue ? + sleep
+            if(active)
+                refreshHandler.postDelayed(this, sleepDuration);
         }
     };
 
@@ -72,8 +77,10 @@ public class NotificationService extends Service {
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         this.context = this;
         this.notificationManager = NotificationManagerCompat.from(context);
+        this.notificationNotified = false;
 
-        new Thread(refreshNotification).start();
+        refreshHandler = new Handler();
+        refreshHandler.postDelayed(refreshNotification, sleepDuration);
         return START_STICKY;
     }
 

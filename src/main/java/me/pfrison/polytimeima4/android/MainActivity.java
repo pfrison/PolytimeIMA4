@@ -1,6 +1,5 @@
 package me.pfrison.polytimeima4.android;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,8 +13,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import me.pfrison.polytimeima4.Achievements.Achievement;
-import me.pfrison.polytimeima4.Achievements.AchievementPopup;
+import java.util.Locale;
+
+import me.pfrison.polytimeima4.achievements.Achievement;
+import me.pfrison.polytimeima4.achievements.AchievementPopup;
 import me.pfrison.polytimeima4.R;
 import me.pfrison.polytimeima4.internet.TimeTableSaverLoader;
 import me.pfrison.polytimeima4.graphics.MainPanelManager;
@@ -29,8 +30,8 @@ import me.pfrison.polytimeima4.utils.TimeTableUtil;
 
 /**
  * TODO list :
- *  - ??? error handler (button "FIX IT !")
- *  - ??? change app color in "recent app" according to actual theme
+ *  ??? clicker MApocalypse
+ *  ??? widgets
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -39,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu;
     private int groupId;
 
-    private boolean canDetectAchievements;
     private int madClicks = 0;
     private boolean madContinue;
+
+    public int secretClicks = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         Button ctrlPanelCurrent = findViewById(R.id.ctrl_panel_current);
         Button ctrlPanelNext = findViewById(R.id.ctrl_panel_next);
         // on click
-        final Activity activity = this;
+        final MainActivity activity = this;
         ctrlPanelPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,11 +123,12 @@ public class MainActivity extends AppCompatActivity {
         MenuUpdater.setDownloading(menu, this);
         loadAndDownload();
 
-        // can we listen to other achievements ?
-        canDetectAchievements = Achievement.achievements[Achievement.ID_BEGIN].isDone();
-
         // achievement get : begin
         Achievement.achievements[Achievement.ID_BEGIN].setDone(achievementPopup);
+
+        // achievement belgium translation
+        if(Locale.getDefault().getISO3Country().equalsIgnoreCase("BEL"))
+            Achievement.achievements[Achievement.ID_BELGE].setDone(achievementPopup);
 
         // detect achievement "mad"
         detectAchievementMad();
@@ -167,6 +170,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.secretClicks = 0;
+    }
+
     // used to catch the result of styleActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -189,9 +198,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void detectAchievementBoring(TimeTable timeTable){
-        if(!canDetectAchievements)
-            return;
-
         // detect the middle of the lesson like this :
         // begin - 30% not middle - 40% middle - 60% not middle - end
         Lesson lessonMiddle = TimeTableUtil.getNextLessonMiddle30Percent(timeTable);

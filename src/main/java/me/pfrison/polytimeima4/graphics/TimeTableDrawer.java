@@ -1,6 +1,7 @@
 package me.pfrison.polytimeima4.graphics;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.text.Html;
@@ -17,45 +18,61 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 import me.pfrison.polytimeima4.R;
+import me.pfrison.polytimeima4.android.ClickerActivity;
+import me.pfrison.polytimeima4.android.MainActivity;
 import me.pfrison.polytimeima4.graphics.style.Style;
 import me.pfrison.polytimeima4.timetable.Day;
 import me.pfrison.polytimeima4.timetable.Week;
 import me.pfrison.polytimeima4.utils.Util;
 
 class TimeTableDrawer {
-    static void drawTimeTable(Week week, ViewGroup rootLayout, Context context){
-        HorizontalScrollView horizontalScrollView = new HorizontalScrollView(context);
+    static void drawTimeTable(Week week, ViewGroup rootLayout, final MainActivity mainActivity){
+        HorizontalScrollView horizontalScrollView = new HorizontalScrollView(mainActivity);
         horizontalScrollView.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-        LinearLayout weekLayout = new LinearLayout(context);
+        LinearLayout weekLayout = new LinearLayout(mainActivity);
         weekLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT));
         weekLayout.setOrientation(LinearLayout.HORIZONTAL);
 
         // add the hoursLayout
-        weekLayout.addView(getHoursLayout(context));
+        weekLayout.addView(getHoursLayout(mainActivity));
 
         // add 5 dayLayouts
         for(int i = 0; i < week.days.length; i++){
-            LinearLayout dayLayout = new LinearLayout(context);
-            dayLayout.setLayoutParams(new LinearLayout.LayoutParams(500, ViewGroup.LayoutParams.MATCH_PARENT));
+            LinearLayout dayLayout = new LinearLayout(mainActivity);
+            int width = mainActivity.getResources().getDimensionPixelSize(R.dimen.time_table_day_width);
+            dayLayout.setLayoutParams(new LinearLayout.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
             dayLayout.setOrientation(LinearLayout.VERTICAL);
 
             // add the dateTextView
-            dayLayout.addView(getDateTextView(i+1, week, context));
+            dayLayout.addView(getDateTextView(i+1, week, mainActivity));
 
-            LinearLayout lessonsLayout = new LinearLayout(context);
+            LinearLayout lessonsLayout = new LinearLayout(mainActivity);
             lessonsLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             lessonsLayout.setOrientation(LinearLayout.VERTICAL);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                lessonsLayout.setBackground(context.getResources().getDrawable(R.drawable.lessons_layout_border, null));
+                lessonsLayout.setBackground(mainActivity.getResources().getDrawable(R.drawable.lessons_layout_border, null));
             else
-                lessonsLayout.setBackground(context.getResources().getDrawable(R.drawable.lessons_layout_border));
+                lessonsLayout.setBackground(mainActivity.getResources().getDrawable(R.drawable.lessons_layout_border));
 
             // add the lessons in layout
-            lessonsLayout = constructDay(lessonsLayout, week.days[i], context);
+            lessonsLayout = constructDay(lessonsLayout, week.days[i], mainActivity);
 
             // add lessonsLayout in dayLayout
             dayLayout.addView(lessonsLayout);
+
+            // secret clicker on saturday
+            if(i == week.days.length - 1)
+                dayLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mainActivity.secretClicks++;
+                        if(mainActivity.secretClicks >= 3){
+                            Intent intent = new Intent(mainActivity, ClickerActivity.class);
+                            mainActivity.startActivity(intent);
+                        }
+                    }
+                });
 
             weekLayout.addView(dayLayout);
         }

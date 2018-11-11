@@ -185,6 +185,17 @@ public class Style {
         }
     }
 
+    private static int getWidgetFailResId(int version){
+        switch (version){
+            case DARK:
+                return R.layout.day_widget_download_fail_dark;
+            case LIGHT:
+                return R.layout.day_widget_download_fail_light;
+            default:
+                return R.layout.day_widget_download_fail_dark;
+        }
+    }
+
     public static int getThemeResIdFromPreferences(Context context) {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
         return getStyleResId(pref.getInt(colorKey, 0), pref.getInt(versionKey, 0));
@@ -207,6 +218,11 @@ public class Style {
             achievementRoot.setBackground(context.getResources().getDrawable(backgroundResId, null));
         else
             achievementRoot.setBackground(context.getResources().getDrawable(backgroundResId));
+    }
+
+    public static int getWidgetFailFromPreferences(Context context){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
+        return getWidgetFailResId(pref.getInt(versionKey, 0));
     }
 
 

@@ -50,7 +50,7 @@ public class TimeTableUtil {
             return null;
         return currentWeek.days[today.get(Calendar.DAY_OF_WEEK) - 2];
     }
-    private static Day getCurrentDay(TimeTable timeTable){
+    public static Day getCurrentDay(TimeTable timeTable){
         Week currentWeek = getCurrentWeek(timeTable);
         if(currentWeek == null)
             return null;
@@ -58,7 +58,7 @@ public class TimeTableUtil {
     }
 
     // current/next lesson
-    public static Lesson getNextLesson10Mins(TimeTable timeTable){
+    public static Lesson getNextLesson30Mins(TimeTable timeTable){
         if(timeTable == null)
             return null;
 
@@ -69,8 +69,8 @@ public class TimeTableUtil {
         Calendar today = Calendar.getInstance();
         for(Lesson lesson : currentDay.lessons){
             // next/current if "durationDetectionBegin" minutes before begin and "durationDetectionEnd" minutes before end
-            if(lesson.begin * 60 - 10 <= today.get(Calendar.HOUR_OF_DAY) * 60
-                    && today.get(Calendar.HOUR_OF_DAY) * 60 < lesson.end * 60 - 10){
+            if(lesson.begin * 60 - 30 <= today.get(Calendar.HOUR_OF_DAY) * 60
+                    && today.get(Calendar.HOUR_OF_DAY) * 60 < lesson.end * 60 - 30){
                 return lesson;
             }
         }
