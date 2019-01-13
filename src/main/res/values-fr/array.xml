@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="group_list">
-        <item>Groupe TD1 TP1</item>
-        <item>Groupe TD1 TP2</item>
-        <item>Groupe TD2 TP3</item>
-        <item>Groupe TD2 TP4</item>
+        <item>Groupe SC TP1</item>
+        <item>Groupe SC TP2</item>
+        <item>Groupe SA TP1</item>
+        <item>Groupe SA TP2</item>
+        <item>Groupe Mécatronique</item>
     </string-array>
     <string-array name="achievement_name">
         <item>Quoi ? Des achievements !?</item>
@@ -23,6 +24,7 @@
         <item>Comme un vrai listeux !</item>
         <item>Mais… C\'est plat ?!</item>
         <item>Je refuse de cliquer !</item>
+        <item>De la pure chance</item>
     </string-array>
     <string-array name="achievement_desc">
         <item>Attrapez-les tous !</item>
@@ -41,5 +43,6 @@
         <item>Achète un freezer dans le clicker</item>
         <item>Achète un vaisseau spatial dans le clicker</item>
         <item>Obtiens 1 million de crêpes sans avoir cliqué la crêpe géante</item>
+        <item>Tu as 1 chance sur 500 de gagner cet achievement lorsque tu lances l'application</item>
     </string-array>
 </resources>

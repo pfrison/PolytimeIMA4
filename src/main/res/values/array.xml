@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="group_list">
-        <item>Group TD1 TP1</item>
-        <item>Group TD1 TP2</item>
-        <item>Group TD2 TP3</item>
-        <item>Group TD2 TP4</item>
+        <item>Group SC TP1</item>
+        <item>Group SC TP2</item>
+        <item>Group SA TP1</item>
+        <item>Group SA TP2</item>
+        <item>Group Mechatronic</item>
     </string-array>
 
     <!-- ACHIEVEMENTS -->
@@ -25,6 +26,7 @@
         <item>Like a true \"listeux\" !</item>
         <item>It\'s… Flat ?!</item>
         <item>Neverclick</item>
+        <item>Just plain luck</item>
     </string-array>
     <string-array name="achievement_desc">
         <item>Go catch them all !</item>
@@ -43,6 +45,7 @@
         <item>You\'ve purchased one freezer at the clicker</item>
         <item>You\'ve purchased one space ship at the clicker</item>
         <item>You\'ve cooked 1 million crepes without clicking the big crepe</item>
+        <item>You have 1 chance in 500 to have this achievement when you open the app</item>
     </string-array>
 
     <!-- Legend -->
