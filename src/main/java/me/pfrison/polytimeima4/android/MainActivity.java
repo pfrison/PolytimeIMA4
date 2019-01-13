@@ -138,8 +138,10 @@ public class MainActivity extends AppCompatActivity {
             Achievement.achievements[Achievement.ID_CHANCE].setDone(achievementPopup);
 
         // start notification
-        Intent intent = new Intent(this, NotificationService.class);
-        startService(intent);
+        if(pref.getBoolean("enableNotification", false)){
+            Intent intent = new Intent(this, NotificationService.class);
+            startService(intent);
+        }
     }
 
     @Override
