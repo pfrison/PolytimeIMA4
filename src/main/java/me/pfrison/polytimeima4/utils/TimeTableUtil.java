@@ -26,7 +26,7 @@ public class TimeTableUtil {
             }
         }
         if(weekToShow == -1 && protection)
-            return timeTable.weeks.length -1;
+            return 0;
         return weekToShow;
     }
     private static Week getCurrentWeek(TimeTable timeTable){

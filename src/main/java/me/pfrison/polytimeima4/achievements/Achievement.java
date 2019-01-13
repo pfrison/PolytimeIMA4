@@ -28,8 +28,9 @@ public class Achievement {
     public static final int ID_CLICKER_FREEZER = 13;
     public static final int ID_CLICKER_EARTH = 14;
     public static final int ID_CLICKER_NEVERCLICK = 15;
+    public static final int ID_CHANCE = 16;
 
-    private static final int NUMBER_OF_ACHIEVEMENTS = 16;
+    private static final int NUMBER_OF_ACHIEVEMENTS = 17;
 
     private static final String achievementDoneKey = "achievementsDone";
 
@@ -49,7 +50,8 @@ public class Achievement {
             R.mipmap.clicker_battery,
             R.mipmap.clicker_freezer,
             R.mipmap.clicker_earth,
-            R.mipmap.clicker_nerverclick
+            R.mipmap.clicker_nerverclick,
+            R.mipmap.chance
     };
 
     private int id;

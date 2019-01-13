@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.Locale;
+import java.util.Random;
 
 import me.pfrison.polytimeima4.achievements.Achievement;
 import me.pfrison.polytimeima4.achievements.AchievementPopup;
@@ -30,8 +31,7 @@ import me.pfrison.polytimeima4.utils.TimeTableUtil;
 
 /**
  * TODO list :
- *  ??? clicker MApocalypse
- *  ??? widgets
+ *  - All done !
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -132,6 +132,10 @@ public class MainActivity extends AppCompatActivity {
 
         // detect achievement "mad"
         detectAchievementMad();
+
+        // plain luck achievement
+        if(new Random().nextDouble()*500 < 1)
+            Achievement.achievements[Achievement.ID_CHANCE].setDone(achievementPopup);
 
         // start notification
         Intent intent = new Intent(this, NotificationService.class);

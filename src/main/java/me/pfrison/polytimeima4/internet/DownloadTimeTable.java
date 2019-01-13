@@ -26,6 +26,7 @@ public class DownloadTimeTable extends AsyncTask<Integer, Void, String> {
     private MainActivity activity;
     private Menu menu;
     private int groupId;
+    private static final String[] URL_FILES = new String[]{"SCTP1", "SCTP2", "SATP1", "SATP2", "CMTP1"};
 
     public DownloadTimeTable(MainActivity activity, Menu menu){
         this.activity = activity;
@@ -40,7 +41,7 @@ public class DownloadTimeTable extends AsyncTask<Integer, Void, String> {
             return null;
 
         this.groupId = groupIds[0];
-        String url = "http://serveur24sur24.free.fr/Polytime/TP" + String.valueOf(groupIds[0]+1) + ".cal";
+        String url = "http://serveur24sur24.free.fr/Polytime/" + URL_FILES[groupIds[0]] + ".cal";
         String timeTableStr = null;
         try {
             // open connection
