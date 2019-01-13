@@ -38,7 +38,6 @@
             android:enabled="true"
             android:exported="true"
             android:permission="none" />
-
         <receiver
             android:name=".android.HideNotificationBroadcastReceiver"
             android:enabled="true"
@@ -53,16 +52,5 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <!-- Work in progress
-        <receiver android:name=".android.DayWidgetVertical">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/day_widget_vertical_info" />
-        </receiver>-->
     </application>
-
 </manifest>
