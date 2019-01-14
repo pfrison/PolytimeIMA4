@@ -49,54 +49,56 @@
     </string-array>
 
     <!-- Legend -->
-    <string-array name="legend_acronyms" translatable="false">
-        <item>Res</item>
-        <item>RLI</item>
-        <item>Syst</item>
-        <item>TR</item>
-        <item>CS</item>
-        <item>VV</item>
-        <item>Sta</item>
-        <item>Elec</item>
-        <item>Gest</item>
-        <item>Mark</item>
-        <item>LV1</item>
-        <item>LV2</item>
-        <item>FI</item>
-        <item>RI</item>
-        <item>Sta4</item>
-        <item>Proj</item>
-        <item>TS</item>
-        <item>CNP</item>
-        <item>Optim</item>
-        <item>CCE</item>
-        <item>FLE</item>
-        <item>CI</item>
+    <string-array name="legend_acronyms_SC" translatable="false">
+        <item>ST</item>
+        <item>IF</item>
+        <item>PSR</item>
+        <item>CLO</item>
+        <item>TIM</item>
+        <item>CNPav</item>
     </string-array>
-    <string-array name="legend_full_names" translatable="false">
-        <item>Réseaux informatiques</item>
-        <item>Réseaux locaux industriels</item>
-        <item>Systèmes</item>
-        <item>Temps réel</item>
-        <item>Capteur et système piloté par événements discrets</item>
-        <item>Variation de vitesse</item>
-        <item>Valoriser son stage</item>
-        <item>Électronique</item>
-        <item>Gestion d\'entreprises</item>
-        <item>Marketing</item>
+    <string-array name="legend_full_names_SC" translatable="false">
+        <item>Support de Transmission</item>
+        <item>Informatique Fondamentale</item>
+        <item>Système et Réseaux</item>
+        <item>Conception logiciel à objets</item>
+        <item>Chaîne de Transmission d\'information multimédia</item>
+        <item>Circuit numérique programmable avancé</item>
+    </string-array>
+    <string-array name="legend_acronyms_SA" translatable="false">
+        <item>Méca</item>
+        <item>TSE</item>
+        <item>GESE</item>
+        <item>OCSA</item>
+        <item>ISA</item>
+    </string-array>
+    <string-array name="legend_full_names_SA" translatable="false">
+        <item>Mécanique</item>
+        <item>Transformation et Stockage de l\'Énergie</item>
+        <item>Gestion de l\'Énergie dans les Systèmes Embarqués</item>
+        <item>Outils de Conception de Système Autonomes</item>
+        <item>Ingénierie des Systèmes Automatisés</item>
+    </string-array>
+    <string-array name="legend_acronyms_CM" translatable="false">
+        <item>Ctech</item>
+        <item>Ang</item>
+        <item>IngEx</item>
+        <item>MSim</item>
+        <item>TrP</item>
+        <item>CAct</item>
+        <item>InitR</item>
+    </string-array>
+    <string-array name="legend_full_names_CM" translatable="false">
+        <item>Culture Technologique</item>
         <item>Anglais</item>
-        <item>Espagnol / Allemend</item>
-        <item>Présentation des filières</item>
-        <item>Présentation des relations internationales</item>
-        <item>Présentation des stages 4A</item>
-        <item>Présentation des projets</item>
-        <item>Traitement de signal</item>
-        <item>Circuit numérique programmables</item>
-        <item>Optimisation</item>
-        <item>Conception de circuits électroniques</item>
-        <item>Français langue étrangère</item>
-        <item>J\'en ai aucune idée…</item>
+        <item>Ingénierie des exigences des systèmes mécaniques</item>
+        <item>Modélisation et Simulation des Systèmes</item>
+        <item>Transmission de Puissance</item>
+        <item>Du Capteur à la Mesure</item>
+        <item>Initiation à la Recherche</item>
     </string-array>
+    
+    <!-- Clicker -->
     <string-array name="clicker_ingredients_name" translatable="false">
         <item>Beurre</item>
         <item>Sucre</item>

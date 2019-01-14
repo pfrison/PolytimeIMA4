@@ -37,7 +37,9 @@
     <string name="not_so_easy">Did you really believe it would be this easy ? You\'re smarter than that !</string>
 
     <!-- Legend -->
-    <string name="legend_title">Legend :</string>
+    <string name="legend_title_SC">Legend SC :</string>
+    <string name="legend_title_SA">Legend SA :</string>
+    <string name="legend_title_CM">Legend CM :</string>
 
     <!-- Styles -->
     <string name="styles_color_title">Color :</string>
@@ -151,8 +153,4 @@
     <string name="clicker_golden_light_gain" translatable="false">Boost !\nProduction x7 pendant +%1$d secondes</string>
     <string name="clicker_golden_high_gain" translatable="false">Rush !\nGain des cliques x777 pendant +%1$d secondes</string>
     <string name="golden_crepes">golden crepes</string>
-
-    <!-- Widgets -->
-    <!--<string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>-->
 </resources>
