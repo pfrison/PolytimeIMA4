@@ -22,7 +22,9 @@
     <string name="enter_response">Entrez votre réponse :</string>
     <string name="search_more">Cherche encore !</string>
     <string name="not_so_easy">Tu pensais vraiment que ça serait si facile ? Tu es plus malin que ça !</string>
-    <string name="legend_title">Légende :</string>
+    <string name="legend_title_SC">Légende SC :</string>
+    <string name="legend_title_SA">Légende SA :</string>
+    <string name="legend_title_CM">Légende CM :</string>
     <string name="styles_color_title">Couleur :</string>
     <string name="styles_version_title">Version :</string>
     <string name="styles_apply_button">Appliquer</string>
