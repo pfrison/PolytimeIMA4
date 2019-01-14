@@ -24,36 +24,53 @@ public class LegendActivity extends AppCompatActivity {
 
         // achievements
         AchievementPopup achievementPopup = new AchievementPopup(findViewById(R.id.achievements_popup_root), this);
+        
+        int[] acros = new int[]{
+            R.array.legend_acronyms_SC,
+            R.array.legend_acronyms_SA,
+            R.array.legend_acronyms_CM
+        };
+        int[] names = new int[]{
+            R.array.legend_full_names_SC,
+            R.array.legend_full_names_SA,
+            R.array.legend_full_names_CM
+        };
+        int[] ids = new int[]{
+            R.id.legend_root_SC,
+            R.id.legend_root_SA,
+            R.id.legend_root_CM
+        };
+        for(int j=0; j<3; j++){
+            String[] acronyms = getResources().getStringArray(acros[j]);
+            String[] fullNames = getResources().getStringArray(names[j]);
 
-        String[] acronyms = getResources().getStringArray(R.array.legend_acronyms);
-        String[] fullNames = getResources().getStringArray(R.array.legend_full_names);
+            LinearLayout rootLayout = findViewById(ids[j]);
 
-        LinearLayout rootLayout = findViewById(R.id.legend_root);
+            // dev anti-bullshit
+            if(acronyms.length != fullNames.length)
+                throw new RuntimeException("Acronyms and full names list should be equal in length !");
 
-        // dev anti-bullshit
-        if(acronyms.length != fullNames.length)
-            throw new RuntimeException("Acronyms and full names list should be equal in length !");
+            for(int i=0; i<acronyms.length; i++){
+                LinearLayout itemLayout = new LinearLayout(this);
+                itemLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                itemLayout.setOrientation(LinearLayout.HORIZONTAL);
+                itemLayout.setPadding(0, 0, 0, getResources().getDimensionPixelOffset(R.dimen.legend_items_padding));
 
-        for(int i=0; i<acronyms.length; i++){
-            LinearLayout itemLayout = new LinearLayout(this);
-            itemLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-            itemLayout.setOrientation(LinearLayout.HORIZONTAL);
-            itemLayout.setPadding(0, 0, 0, getResources().getDimensionPixelOffset(R.dimen.legend_items_padding));
+                TextView acronymTV = new TextView(this);
+                acronymTV.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
+                acronymTV.setGravity(Gravity.CENTER | Gravity.END);
+                acronymTV.setTypeface(null, Typeface.BOLD);
+                acronymTV.setText(acronyms[i]);
+                acronymTV.setPadding(0, 0, getResources().getDimensionPixelSize(R.dimen.legend_acronyms_padding), 0);
+                itemLayout.addView(acronymTV);
 
-            TextView acronymTV = new TextView(this);
-            acronymTV.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
-            acronymTV.setGravity(Gravity.CENTER | Gravity.END);
-            acronymTV.setTypeface(null, Typeface.BOLD);
-            acronymTV.setText(acronyms[i]);
-            acronymTV.setPadding(0, 0, getResources().getDimensionPixelSize(R.dimen.legend_acronyms_padding), 0);
-            itemLayout.addView(acronymTV);
+                TextView fullNameTV = new TextView(this);
+                fullNameTV.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 5));
+                fullNameTV.setText(fullNames[i]);
+                itemLayout.addView(fullNameTV);
 
-            TextView fullNameTV = new TextView(this);
-            fullNameTV.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 5));
-            fullNameTV.setText(fullNames[i]);
-            itemLayout.addView(fullNameTV);
-
-            rootLayout.addView(itemLayout);
+                rootLayout.addView(itemLayout);
+            }
         }
 
         Achievement.achievements[Achievement.ID_LEGEND].setDone(achievementPopup);
