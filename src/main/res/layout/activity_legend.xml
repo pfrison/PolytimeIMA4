@@ -5,35 +5,74 @@
 
     <!-- Serious panel -->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/legend_root_padding"
-        android:orientation="vertical">
+        android:padding="@dimen/legend_root_padding">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="@string/legend_title" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:orientation="vertical"
+            android:id="@+id/legend_root" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/legend_title_SC" />
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/legend_root" >
-
+                android:id="@+id/legend_root_SC" >
+                
                 <!-- Legend add programmatically -->
-
+                
             </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/legend_title_SA" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/legend_root_SA" >
+                
+                <!-- Legend add programmatically -->
+                
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/legend_title_CM" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/legend_root_CM" >
+                
+                <!-- Legend add programmatically -->
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <!-- Achievements -->
 
